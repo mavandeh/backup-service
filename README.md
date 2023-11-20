@@ -22,15 +22,12 @@ This script will uninstall the service regardless of modifcations made to the sc
 
 ## TODO:
 - Add interactivity to install script that prompts user for install parameters, with suggested defaults:
-    - ARCHIVENAME
-    - ARCHIVEPATH
     - Would you like to wait for network mount? Name of network mount? `# After=network.target mnt-nas.mount`
     - Where would you like the backup script to be stored and run from?
     - Enable for current user only, or all users of this machine?
-    - Schedule of backups? (daily, weekly, monthly)
     - How long to keep backups? (also periodic clearing of old backups)
     - Start and enable service/timer
-    - Generate `backup-service-uninstall.sh` with same parameters.
+    - Generate `backup-service-uninstall-user.sh` with same parameters.
 - Create `backup-restore.sh` which:
     - lists unique archive names in backup directory, promts user to choose one.
     - lists last 10 dates backed up, prompts user to choose one.
